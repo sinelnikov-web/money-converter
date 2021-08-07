@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter, Switch, Route, Redirect, HashRouter} from "react-router-dom";
 import ExchangeRate from "./Components/ExchangeRate/ExchangeRate";
 import Exchange from "./Components/Exchange/Exchange";
+import React from "react";
 
-function App() {
+
+const App: React.FC = () => {
   return (
     <div className="App">
         <HashRouter>

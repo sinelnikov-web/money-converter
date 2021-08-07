@@ -1,6 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const ExchangeRateResultItem = ({countryCode, currencyName, currencyValue}) => {
+interface ExchangeRateResultItemProps {
+    countryCode: string
+    currencyName: string
+    currencyValue: number
+}
+
+const ExchangeRateResultItem: React.FC<ExchangeRateResultItemProps> = ({countryCode, currencyName, currencyValue}) => {
     return (
         <li className="converter__item">
             <img
